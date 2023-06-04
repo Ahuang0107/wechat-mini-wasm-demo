@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text>wechat-mini-wasm-demo</text>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+[package]
+name = "wechat-mini-wasm-demo"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "replace"
+path = "src/replace.rs"
+
+[dependencies]
+wasm-bindgen = "0.2.84"
+js-sys = "0.3.61"
+md5 = "0.7.0"
+
+[profile.release]
+lto = true
+opt-level = 'z'
+codegen-units = 1
+panic = 'abort'
